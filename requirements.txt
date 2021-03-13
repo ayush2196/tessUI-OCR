@@ -1,0 +1,15 @@
+scikit-image>=0.15.0
+torchvision~=0.8.1
+allennlp~=1.2.0
+torch~=1.7.0
+pandas~=1.0.5
+numpy>=1.16.4
+torchtext~=0.6.0
+tesserocr~=2.5.1
+Flask~=1.1.1
+flask_limiter~=1.4
+Pillow~=7.2.0
+pyyaml~=5.3.1
+craft-text-detector~=0.3.1
+rtree~=0.9
+python-Levenshtein~=0.12
