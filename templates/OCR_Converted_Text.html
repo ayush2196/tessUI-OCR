@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <title>Tess OCR</title>
+    <h2 align="center"> Get Date, E-mail extracted from any image </h2>
+    <p align="center"> Also get PAN number extracted from the PAN Card image. </p>
+</head>
+<body>
+    <form  align="center" action="/">
+        <img src= "{{url_for('send_image', filename=Img_path)}}" alt="Uploaded File" width="500" height="300">
+        <br><br>
+        <label>Extracted Date/ Email/ PAN Number(if uploaded) : </label>
+        <br><br>
+        <textarea rows="10" cols="100"> {{ Converted_text }} </textarea>
+        <br><br>
+        <input class="submitButton" type="submit" value="Submit Another Image">
+    </form>
+<footer class="footer-container">
+    <div class="left-col-text">
+        <p>@Copyright 2021. All rights Reserved.</p>
+    </div>
+    <div class="right-col-text">
+        <p>by Ayush Goyal</p>
+    </div>
+</footer>
+</body>
+</html>
