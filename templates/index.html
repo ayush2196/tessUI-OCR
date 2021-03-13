@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <title>Tess OCR</title>
+    <h2 align="center"> Get Date, E-mail extracted from any image </h2>
+    <p align="center"> Also get PAN number extracted from the PAN Card image. </p>
+    <script type="text/javascript">
+    function CheckRegex(val){
+     var element=document.getElementById('other');
+     if(val=='---Select---'||val=='others')
+       element.style.display='block';
+     else
+       element.style.display='none';
+    }
+    </script>
+</head>
+<body>
+    <form align="center" action="/convertToText" method="post" enctype="multipart/form-data">
+        <fieldset class="patternOCR">
+            <legend>Image Upload</legend>
+                <label for="img">Select image:</label></br>
+                <label style="font-weight: 100;  font-size: 10px;">* minimum 300 dpi image would be awesome!</label></br></br>
+                <input class="chooseFileButton" style="margin-left: 70px" type="file" id="img" name="img" accept="image/*"></br></br>
+                <p>
+                 <label>What do you want to extract?</label></br>
+                 <select name="regexSelect" id="regexDropdown" onchange='CheckRegex(this.value);'>
+                   <option>---Select---</option>
+                   <option value = "email">Email</option>
+                   <option value = "date">Date</option>
+                   <option value = "pan">PAN Number</option>
+                   <option value = "others">Others</option>
+                 </select>
+                </p>
+                </br><input type="text" name="other" id="other" style='display:none; margin-left: 100px;'/>
+                <input class="submitButton" type="submit">
+        </fieldset>
+
+<!--        <fieldset class="completeOCR">-->
+<!--            <legend>Image Upload</legend>-->
+<!--                <label for="img">Select image:</label></br>-->
+<!--                <label style="font-weight: 100;  font-size: 10px;">* minimum 300 dpi image would be awesome!</label></br></br>-->
+<!--                <input class="chooseFileButton" style="margin-left: 70px" type="file" id="img" name="img" accept="image/*"></br></br>-->
+<!--                <input class="submitButton" type="submit">-->
+<!--        </fieldset>-->
+    </form>
+    <footer class="footer-container">
+        <div class="left-col-text">
+            <p>@Copyright 2021. All rights Reserved.</p>
+        </div>
+        <div class="right-col-text">
+            <p>by Ayush Goyal</p>
+        </div>
+    </footer>
+</body>
+</html>
