@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
     <title>Tess OCR</title>
-    <h2 align="center"> Get Date, E-mail extracted from any image </h2>
-    <p align="center"> Also get PAN number extracted from the PAN Card image. </p>
+    <h2 align="center"> Tool for text extraction from any Image </h2>
+    <p align="center"> Email, Date, PAN Number or any other custom text by entering custom regex pattern </p>
     <script type="text/javascript">
     function CheckRegex(val){
      var element=document.getElementById('other');
@@ -33,7 +33,7 @@
                    <option value = "others">Others</option>
                  </select>
                 </p>
-                </br><input type="text" name="other" id="other" style='display:none; margin-left: 100px;'/>
+                </br><input type="text" name="other" id="other" placeholder="Enter your Regex pattern here" style='display:none; margin-left: 83px; width: 185px;'/>
                 <input class="submitButton" type="submit">
         </fieldset>
 
