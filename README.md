@@ -9,7 +9,9 @@ In this application, you can extract:
 
 from any image.
 
-![Demo](https://user-images.githubusercontent.com/22439928/118014006-61981d00-b370-11eb-9c7f-ec7a9d67107a.gif)
+<p align="center">
+  ![Demo](https://user-images.githubusercontent.com/22439928/118014006-61981d00-b370-11eb-9c7f-ec7a9d67107a.gif)
+</p>
 ____
 ### Installation
 **Required python version: 3.7**
