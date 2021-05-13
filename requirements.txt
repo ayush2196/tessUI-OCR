@@ -1,3 +1,4 @@
+-f https://download.pytorch.org/whl/torch_stable.html
 atomicwrites==1.4.0
 attrs==20.3.0
 blis==0.7.4
@@ -73,6 +74,8 @@ tokenizers==0.9.3
 toml==0.10.2
 tools==0.1.9
 toolz==0.11.1
+torch==1.8.1+cpu 
+torchvision==0.9.1+cpu
 tqdm==4.47.0
 transformers==3.5.1
 typing-extensions==3.7.4.3
@@ -80,3 +83,4 @@ urllib3==1.25.11
 wasabi==0.8.0
 Werkzeug==1.0.1
 zipp==3.4.0
+opencv-python-headless==4.2.0.32
