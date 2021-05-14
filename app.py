@@ -56,4 +56,4 @@ def send_image(filename):
 
 
 if __name__ == "__main__":
-    app.run(port=4998, debug=True)
+    app.run(debug=True)
