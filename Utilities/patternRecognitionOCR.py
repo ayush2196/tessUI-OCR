@@ -15,8 +15,8 @@ def convert_toText(path,pattern, inputRegex):
 
     img = cv2.imread(path)
 
-    d = pytesseract.image_to_data(img, output_type=Output.DICT)
-    keys = list(d.keys())
+    d = pytesseract.image_to_string(img)
+    #keys = list(d.keys())
 
     date_pattern = '^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/(19|20)\d\d$'
     email_pattern = '[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+'
