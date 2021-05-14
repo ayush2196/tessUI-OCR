@@ -1,5 +1,5 @@
 # ML based Text Extraction OCR
-GUI based solution for text extraction and ML based pattern recognition. 
+GUI based [OCR](https://tessuiocr.herokuapp.com) solution for text extraction and ML based pattern recognition. 
 
 In this application, you can extract:
 - Date
@@ -8,6 +8,8 @@ In this application, you can extract:
 - Any other text by entering custom Regex
 
 from any image.
+
+![Demo](https://user-images.githubusercontent.com/22439928/118014006-61981d00-b370-11eb-9c7f-ec7a9d67107a.gif?style=centerme)
 
 ____
 ### Installation
