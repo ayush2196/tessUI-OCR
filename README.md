@@ -1,5 +1,5 @@
 # ML based Text Extraction OCR
-GUI based solution for text extraction and ML based pattern recognition. 
+GUI based [OCR](https://tessuiocr.herokuapp.com) solution for text extraction and ML based pattern recognition. 
 
 In this application, you can extract:
 - Date
